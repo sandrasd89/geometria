@@ -6,7 +6,12 @@ public class Circulo_SSI extends FiguraGeometrica_SSI {
 	
 	public Circulo_SSI(double r, String tipoFigura) {
 		super(tipoFigura);
-		radio = r;
+		if (r<0){
+			radio=radio*-1;
+		}
+		else{
+			radio = r;
+		}
 	}
 
 	@Override
